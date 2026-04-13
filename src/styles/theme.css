@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Muthiara';
+  src: url('/src/public/fonts/Muthiara demo version.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: linear-gradient(12deg, #a1c6f1, #a08fc2);
+  --bg-tertiary: #e4e4e7;
+  --bg-card: #ffffff;
+  --bg-hover: #f0f0f0;
+  --bg-active: #e8e8e8;
+  --bg-player: #fafafa;
+  --text-primary: #09090b;
+  --text-secondary: #474787;
+  --text-muted: #2b5c9f;
+  --accent: #062e4c;
+  --accent-hover: #5a6aac;
+  --accent-soft: #ede9fe;
+  --border: #36365d;
+  --border-strong: #040422;
+  --shadow: 0 1px 3px rgba(0,0,0,0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --radius-sm: 6px;
+  --radius-md: 6px;
+  --radius-lg: 0px;
+  --transition: 0.2s ease;
+}
+
+html.dark {
+  
+  --bg-primary: #29292e; 
+  --bg-secondary: #327693;
+  --bg-tertiary: #1f1f23;
+  
+
+  --bg-card: #111114;
+  --bg-hover: #1e1b4b;
+  --bg-active: #414043;
+
+  --bg-player: #030014; 
+
+  --text-primary: #fafafa;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+
+  --accent: #44b3db; 
+  --accent-hover: #81bdeb;
+  --accent-soft: rgba(69, 148, 221, 0.1); 
+
+  --border: #27272a;
+  --border-strong: #3f3f46;
+  
+
+  --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.7);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  transition: background var(--transition), color var(--transition);
+  min-height: 100vh;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+  color: inherit;
+  transition: all var(--transition);
+}
+
+input, select {
+  font-family: inherit;
+  color: inherit;
+}
